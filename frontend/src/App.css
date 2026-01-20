@@ -1,0 +1,306 @@
+:root {
+  --mystic-purple: #1a0b2e;
+  --gold: #d4af37;
+  --white: #f5f5f5;
+}
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  min-height: 100vh;
+  color: var(--white);
+  font-family: 'Georgia', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.language-selector {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.lang-btn {
+  background: rgba(212, 175, 55, 0.2);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s;
+  font-family: 'Georgia', serif;
+}
+
+.lang-btn:hover {
+  background: rgba(212, 175, 55, 0.4);
+}
+
+.lang-btn.active {
+  background: var(--gold);
+  color: #000;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--white);
+  margin-bottom: 12px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 0.95rem;
+  color: #d0d0d0;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  font-style: italic;
+  text-align: center;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.lomake {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.lomake label {
+  font-size: 1rem;
+  color: var(--gold);
+  text-transform: none;
+  letter-spacing: 1px;
+   margin-top: 8px;
+}
+
+input {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid #444;
+  padding: 8px;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+select {
+  background: rgba(255, 255, 255, 1) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23000000" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>') no-repeat;
+  background-position: right 12px center;
+  background-size: 20px;
+  border: 1px solid #444;
+  padding: 12px 40px 12px 12px;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input:focus {
+  border-color: var(--gold);
+}
+
+select:focus {
+  border-color: var(--gold);
+}
+
+.price-tag {
+  font-size: 2rem;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+
+.price-label {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.ennustus-teksti {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: #e0e0e0;
+}
+
+.reset-btn {
+  margin-top: 20px;
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.reset-btn:hover {
+  background: var(--gold);
+  color: black;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.error-text {
+  color: #ff6b6b;
+  font-size: 0.8rem;
+  margin-top: -10px;
+  display: block;
+}
+
+.error-message {
+  background-color: rgba(255, 107, 107, 0.2);
+  border: 1px solid #ff6b6b;
+  color: #ff9999;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+.share-btn {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: 1px solid var(--gold);
+  background-color: transparent;
+  color: var(--gold);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 0.9rem;
+}
+
+.share-btn:hover {
+  background-color: var(--gold);
+  color: black;
+}
+
+.nappi-ryhma {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: var(--gold);
+  padding: 40px 20px;
+}
+
+.tulos-kortti {
+  max-width: 600px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    padding: 24px;
+    border-radius: 15px;
+  }
+
+  .lomake {
+    gap: 12px;
+  }
+
+  .ennustus-teksti {
+    font-size: 1rem;
+  }
+
+  .share-btn {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+    margin-right: 5px;
+  }
+
+  .nappi-ryhma {
+    gap: 8px;
+  }
+
+  .reset-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
+
+  .price-tag {
+    font-size: 1.5rem;
+  }
+
+  .price-label {
+    font-size: 0.9rem;
+  }
+}
+
+/* Spinner animaatio */
+.spinner {
+  border: 4px solid rgba(212, 175, 55, 0.2);
+  border-top: 4px solid var(--gold);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.loading-text {
+  font-size: 1.3rem;
+  color: var(--gold);
+  font-weight: bold;
+  letter-spacing: 1px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
