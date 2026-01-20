@@ -4,7 +4,7 @@ import './App.css';
 
 const translations = {
   fi: {
-    title: 'Osta Ennustus',
+    title: 'Ai ennustaja',
     intro: 'Hyödynnämme AI-teknologiaa tulkitsemaan syntymäaikasi symboliikkaa. Algoritmi generoi katsauksen työhösi, ihmissuhteisiisi ja energiaasi.',
     name: 'Nimi',
     namePlaceholder: 'Nimesi',
@@ -31,10 +31,10 @@ const translations = {
     errorFetch: 'Virhe haettaessa ennustusta.',
     errorServer: 'Palvelinvirhe: ',
     errorTimeout: 'Pyyntö aikakatkaistiin. Yritä uudelleen.',
-    shareMessage: 'Sain juuri mielenkiintoisen tulkinnan tähdiltä: \n\n"{text}..." \n\nHae oma ennustuksesi täältä: {url}'
+    shareMessage: 'Sain juuri mielenkiintoisen tulkinnan tähdiltä: \n\n"{text}..." \n\nHae oma Ai ennustuksesi täältä: {url}'
   },
   en: {
-    title: 'Fortune-teller',
+    title: 'Ai Fortune-teller',
     intro: 'We use AI technology to interpret the symbolism of your birth time. Our algorithm generates insights into your work, relationships and energy.',
     name: 'Name',
     namePlaceholder: 'Your name',
@@ -61,7 +61,7 @@ const translations = {
     errorFetch: 'Error fetching forecast.',
     errorServer: 'Server error: ',
     errorTimeout: 'Request timed out. Please try again.',
-    shareMessage: 'I just received an interesting interpretation from the stars: \n\n"{text}..." \n\nGet your own reading here: {url}'
+    shareMessage: 'I just received an interesting interpretation from the stars: \n\n"{text}..." \n\nGet your own Ai reading here: {url}'
   }
 };
 
