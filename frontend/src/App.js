@@ -260,9 +260,21 @@ const jaaWhatsApp = () => {
                         setVirhe(t.errorNameEmpty);
                         return Promise.reject(new Error(t.errorNameEmpty));
                       }
+                      if (!formData.birthMonth) {
+                        setVirhe(t.birthMonth + " " + t.nameRequired);
+                        return Promise.reject(new Error(t.birthMonth + " " + t.nameRequired));
+                      }
                       if (formData.birthYear < 1900 || formData.birthYear > new Date().getFullYear()) {
                         setVirhe(t.errorYearInvalid);
                         return Promise.reject(new Error(t.errorYearInvalid));
+                      }
+                      if (!formData.gender) {
+                        setVirhe(t.gender + " " + t.nameRequired);
+                        return Promise.reject(new Error(t.gender + " " + t.nameRequired));
+                      }
+                      if (formData.luckyNumber < 1 || formData.luckyNumber > 100) {
+                        setVirhe("Onnennumero on oltava 1-100");
+                        return Promise.reject(new Error("Onnennumero on oltava 1-100"));
                       }
                       
                       return actions.order.create({
@@ -276,6 +288,9 @@ const jaaWhatsApp = () => {
                     }}
                     onError={() => {
                       setVirhe(t.errorPayment);
+                    }}
+                    onCancel={() => {
+                      setVirhe("");
                     }}
                   />
                 </div>
