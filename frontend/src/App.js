@@ -4,7 +4,7 @@ import './App.css';
 
 const translations = {
   fi: {
-    title: 'Osta Ennustus viikoksi',
+    title: 'Osta Ennustus',
     intro: 'Hyödynnämme AI-teknologiaa tulkitsemaan syntymäaikasi symboliikkaa. Algoritmi generoi katsauksen työhösi, ihmissuhteisiisi ja energiaasi.',
     name: 'Nimi',
     namePlaceholder: 'Nimesi',
@@ -18,7 +18,7 @@ const translations = {
     genderMale: 'Mies',
     genderOther: 'Muu',
     genderPreferNotSay: 'En halua kertoa',
-    priceDescription: 'Syötä nimesi, syntymäkuukautesi ja syntymävuotesi. Saat kattavan ennustuksen huippuedulliseen hintaan',
+    priceDescription: 'Syötä nimesi, syntymäkuukautesi ja syntymävuotesi. Saat kattavan ennustuksen hintaan',
     price: '0.99€',
     errorPayment: 'Maksun käsittely epäonnistui. Yritä uudelleen.',
     errorNameEmpty: 'Anna nimesi',
@@ -34,7 +34,7 @@ const translations = {
     shareMessage: 'Sain juuri mielenkiintoisen tulkinnan tähdiltä: \n\n"{text}..." \n\nHae oma ennustuksesi täältä: {url}'
   },
   en: {
-    title: 'Buy Weekly Forecast',
+    title: 'Fortune-teller',
     intro: 'We use AI technology to interpret the symbolism of your birth time. Our algorithm generates insights into your work, relationships and energy.',
     name: 'Name',
     namePlaceholder: 'Your name',
@@ -48,7 +48,7 @@ const translations = {
     genderMale: 'Male',
     genderOther: 'Other',
     genderPreferNotSay: 'Prefer not to say',
-    priceDescription: 'Enter your name, birth month and birth year. Get a comprehensive forecast at an unbeatable price',
+    priceDescription: 'Enter your name, birth month and birth year. Get a comprehensive reading for only',
     price: '0.99€',
     errorPayment: 'Payment processing failed. Please try again.',
     errorNameEmpty: 'Please enter your name',
@@ -61,7 +61,7 @@ const translations = {
     errorFetch: 'Error fetching forecast.',
     errorServer: 'Server error: ',
     errorTimeout: 'Request timed out. Please try again.',
-    shareMessage: 'I just received an interesting interpretation from the stars: \n\n"{text}..." \n\nGet your own forecast here: {url}'
+    shareMessage: 'I just received an interesting interpretation from the stars: \n\n"{text}..." \n\nGet your own reading here: {url}'
   }
 };
 

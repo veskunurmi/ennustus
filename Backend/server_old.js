@@ -132,7 +132,7 @@ Vaadittu rakenne:
 
 Johdanto: Lyhyt maininta ennusteen symbolisesta luonteesta.
 
-Kerro alussa lyhyesti planeettojen asennosta syntymäkuukautena ja -vuotena sekä miten ne vaikuttavat käyttäjän elämään tällä hetkellä.
+Kerro alussa lyhyesti planeettojen asennosta syntymäkuukautena ja syntymävuotena sekä miten ne vaikuttavat käyttäjän elämään tällä hetkellä.
 
 Astrologinen ja energeettinen tulkinta:
 - Mikä vaihe käyttäjällä on menossa?

@@ -94,7 +94,7 @@ app.post('/api/ennustus', async (req, res) => {
         let systemPrompt = '';
 
         if (language === 'en') {
-            systemPrompt = `Role: You are an experienced and empathetic psychic. Create a symbolic and entertaining weekly forecast in English.
+            systemPrompt = `Role: You are an experienced and empathetic fortune-teller. Create a symbolic and entertaining reading in English.
 
 User Information:
 
